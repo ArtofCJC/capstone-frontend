@@ -12,7 +12,7 @@ const Attractions = () => {
 
     useEffect(() => {
       const fetchAttractions = async () => {
-        const response = await fetch('/api/attractions')
+        const response = await fetch('http://localhost:4000/api/attractions')
         const json = await response.json()
 
         if (response.ok) {
