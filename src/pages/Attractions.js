@@ -16,7 +16,7 @@ const Attractions = () => {
 
   useEffect(() => {
     const fetchAttractions = async () => {
-      const response = await fetch('http://localhost:4000/api/attractions')
+      const response = await fetch('https://capstone-backend-0g3p.onrender.com/attractions')
       const json = await response.json()
 
       if (response.ok) {
