@@ -24,7 +24,7 @@ code {
     monospace;
 }
 .cimg{
-   width:  800px;
+   width:  900px;
    height: 400px;
   
 }
@@ -64,27 +64,30 @@ code {
 
 
 
-/* Ignore This, just coloring */
-body {
-  background: #fff;
-}
-
-.body-style {
-   padding: 15px;
-}
-
 article {
   background: #2c3135;
   border-radius: 0px;
   padding: 25px 0 100px;
   
 }
+/* Ignore This, just coloring */
+body {
+  background: #2c3135;
+}
+
+.body-style {
+   padding: 15px;
+}
+
+.dropShad {
+   filter: drop-shadow(0px 0px 10px black);
+}
 
 
 .title-section, .content-section, .sidebar-section {
   background: #4b4b4b;
    border-radius: 12px;
-   border: solid 3px #f1f1f1; 
+   border: solid 3px #858585; 
 }
 
 .title-section {
@@ -98,7 +101,11 @@ article {
   margin: 0;
   padding-top: 200px;
 }
-
+.center-img {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
 .sidebar-item {
   text-align: center;
   
@@ -110,8 +117,21 @@ article {
     border-bottom: solid 1px #fff;
   }
 }
-
-
+.adspace{
+   background-color: #28587c;
+   height: ;
+   text-align: center;
+   
+}
+.grid-container {
+   display: grid;
+   grid-template-columns: auto auto auto;
+   /* grid-template-rows: ;  */
+   grid-gap: 10px;
+   padding: 0px;
+   max-height: fit-content;
+   max-width: fit-content;
+ }
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 body{
@@ -198,7 +218,11 @@ nav{
 }
 .about .left h1{
    text-align:center;
-   color:#1EADFF;
+   font-size: 72px;
+   background: -webkit-linear-gradient(#eee, #333);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   filter: drop-shadow(0px 0px 10px black);
    margin:0 0 10px 0;
 }
 .about .left hr{
@@ -235,8 +259,12 @@ nav{
 }
 .mission .right h1{
    text-align:center;
-   color:#1EADFF;
+   font-size: 72px;
+   background: -webkit-linear-gradient(#eee, #333);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
    margin:0 0 20px 0;
+   filter: drop-shadow(0px 0px 10px black);
 }
 .mission .right hr{
    width:35%;
@@ -251,14 +279,18 @@ nav{
 
 
 .team{
-   width:90%;
-   margin:auto;
+   width:100%;
+   justify-content: center;
    padding:5% 5%;
    over-flow:hidden;
+   
 }
 .team h1{
    text-align:center;
-   color:#1EADFF;
+   font-size: 72px;
+   background: -webkit-linear-gradient(#eee, #333);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
    
 }
 .team h1 hr{
@@ -268,7 +300,9 @@ nav{
    border-bottom:none;
    margin-bottom:50px;
 }
-
+.text-grad{
+   background: radial-gradient(circle at 10% 20%, rgb(255, 200, 124) 0%, rgb(252, 251, 121) 90%);
+}
 .clear{
     clear: both;			
 }
