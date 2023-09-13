@@ -8,14 +8,6 @@ switch (action.type) {
         return {
             attractions: action.payload
         }
-        case 'CREATE_ATTRACTION':
-            return {
-                attractions: [action.payload, ...state.workouts]
-            }
-            // case 'DELETE_ATTRACTION':
-            //     return {
-            //         workouts: state.workouts.filter((w) => w._id !== action.payload._id)
-            //     }
             default:
                 return state
     }
