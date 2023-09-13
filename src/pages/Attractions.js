@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import axios from 'axios'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -16,7 +17,7 @@ const Attractions = () => {
 
   useEffect(() => {
     const fetchAttractions = async () => {
-      const response = await fetch('https://capstone-backend-0g3p.onrender.com/attractions')
+      const response = axios.get('https://capstone-backend-0g3p.onrender.com/attractions')
       const json = await response.json()
 
       if (response.ok) {
