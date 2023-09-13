@@ -47,6 +47,7 @@ useEffect(() => {
             <div className='adspace'><img src={bad} alt='batman' style={{width:400}} /></div>
             <div className='adspace'><img src={bad2} alt='batman' style={{width:400}} /></div>
             <div className='adspace'><img src={bad} alt='batman' style={{width:400}} /></div>
+            Temporary Text
             </Col>
             
         </Row>
