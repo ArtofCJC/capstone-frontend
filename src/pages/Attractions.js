@@ -17,16 +17,16 @@ const Attractions = () => {
 
   useEffect(() => {
     const fetchAttractions = async () => {
-      const response = fetch('https://capstone-backend-0g3p.onrender.com/attractions')
+      const response = fetch('https://capstone-backend-0g3p.onrender.com/api/attractions')
       const json = await response.json()
 
       if (response.ok) {
-        dispatch({ type: 'SET_ATTRACTIONS', payload: json })
-    }
+        setAttractions(json)
+      }
     }
 
     fetchAttractions();
-  }, [dispatch])
+  }, [])
 
   return (
     <div>
