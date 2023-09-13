@@ -44,9 +44,9 @@ useEffect(() => {
               )}
             </article>
             <Col xs='3'>
-            <div className='adspace'><img src={bad} alt='batman' style={{width:400}} /></div>
-            <div className='adspace'><img src={bad2} alt='batman' style={{width:400}} /></div>
-            <div className='adspace'><img src={bad} alt='batman' style={{width:400}} /></div>
+            <div className='adspace'><img src='./images/batman-ad.jpg' alt='batman' style={{width:400}} /></div>
+            <div className='adspace'><img src='https://github.com/ArtofCJC/capstone-frontend/blob/master/src/pages/images/bad2.png?raw=true' alt='batman' style={{width:400}} /></div>
+            <div className='adspace'><img src='./images/batman-ad.jpg' alt='batman' style={{width:400}} /></div>
             Temporary Text
             </Col>
             
