@@ -8,14 +8,16 @@ import bad from './images/batman-ad.jpg'
 import bad2 from './images/bad2.png'
 import '../index.css'
 
-cog useState('')
+const Attractions = () => {
+  // const [title, setTitle] = useState('')
+  // const [info, setInfo] = useState('')
   // const [location, setLocation] = useState('')
   // const [image, setImage] = useState('')
   const [attractions, setAttractions] = useState(null)
 
   useEffect(() => {
     const fetchAttractions = async () => {
-      const response = fetch('https://capstone-backend-0g3p.onrender.com/attractions')
+      const response = axios.('https://capstone-backend-0g3p.onrender.com/attractions')
       const json = await response.json()
 
       if (response.ok) {
