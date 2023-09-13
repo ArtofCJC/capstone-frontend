@@ -26,7 +26,7 @@ const Attractions = () => {
     }
 
     fetchAttractions();
-  }, [])
+  }, [dispatch])
 
   return (
     <div>
