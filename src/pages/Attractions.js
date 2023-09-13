@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { AttractionsContext } from '../context/attractionContext';
+import { useAttractionsContext } from '../hooks/useAttractionContext';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -9,7 +9,7 @@ import bad2 from './images/bad2.png'
 import '../index.css'
 
 const Attractions = () => {
-  const {attractions, dispatch} = AttractionsContext()
+  const {attractions, dispatch} = useAttractionsContext()
 //  const [attractions, setAttractions] = useState(null)
 
   useEffect(() => {
