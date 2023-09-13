@@ -12,17 +12,23 @@ const Attractions = () => {
   const {attractions, dispatch} = useAttractionsContext()
 //  const [attractions, setAttractions] = useState(null)
 
-  useEffect(() => {
-    const fetchAttractions = async () => {
-      const response = fetch('https://capstone-backend-0g3p.onrender.com/api/attractions/')
-      const json = await response.json()
+useEffect(() => {
+  const fetchAttractions = async () => {
+    try {
+      const response = await fetch('https://capstone-backend-0g3p.onrender.com/api/attractions/');
 
-      if (response.ok) {
-        dispatch({type: 'SET_ATTRACTIONS', payload: json})
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
       }
-    }
 
-    fetchAttractions();
+      const json = await response.json();
+      dispatch({ type: 'SET_ATTRACTIONS', payload: json });
+    } catch (error) {
+      console.error('Error fetching attractions:', error);
+    }
+  };
+
+  fetchAttractions();
   }, [dispatch])
 
   return (
