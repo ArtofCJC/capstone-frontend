@@ -21,12 +21,8 @@ const Attractions = () => {
       const json = await response.json()
 
       if (response.ok) {
-        // setTitle(json)
-        // setInfo(json)
-        // setLocation(json)
-        // setImage(json)
-        setAttractions(json)
-      }
+        dispatch({ type: 'SET_ATTRACTIONS', payload: json })
+    }
     }
 
     fetchAttractions();
