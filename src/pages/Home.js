@@ -60,7 +60,7 @@ const Home = () => {
     </div>
                 </div>
             </div>
-            <div class="col-5 bg-warning">
+            <div class="col-5 bg-warning adspace">
 
               <div class="sidebar-item">
                 <div class="make-me-sticky adspace">
