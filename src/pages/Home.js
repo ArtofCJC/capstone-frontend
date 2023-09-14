@@ -63,7 +63,7 @@ const Home = () => {
             <div class="col-5 bg-warning">
 
               <div class="sidebar-item">
-                <div class="make-me-sticky">
+                <div class="make-me-sticky adspace">
                   <img src='https://github.com/ArtofCJC/capstone-frontend/blob/master/src/pages/images/batman-ad.png?raw=true' alt='batman ad' style={{width:400}} />
                 </div>
               </div>
