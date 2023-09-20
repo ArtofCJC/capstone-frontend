@@ -33,6 +33,13 @@ useEffect(() => {
 
   return (
     <div>
+    <div class="row">
+            <div class="col">
+                <div class="title-section">
+                    <h1 className='header-logo' style={{ color: "white"}}>The Cincinnati Travel Charter</h1>
+                </div>
+            </div>
+        </div>
       <Container>
         <Row>
          
