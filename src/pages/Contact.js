@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import csky from './images/cincyskylineclip.png'
 const FORM_ENDPOINT = "https://cincinnaticharter.dev/start"; // TODO - update to the correct endpoint
 
 const ContactForm = () => {
@@ -47,7 +47,18 @@ const ContactForm = () => {
   }
 
   return (
+    <div>
+    <div class="row">
+            <div class="col">
+                <div class="title-section dropShad cardbg container container-fluid">
+            <img src={csky} alt='skyline' className='cotainer container-fluid imgbrdrnd'/>
+                    <h1 className='header-logo' style={{ color: "white"}}>Contact Cincinnati</h1>
+                    
+                </div>
+            </div>
+        </div>
     <div className="form-center bg p-5">
+    
     <form
       action={FORM_ENDPOINT}
       onSubmit={handleSubmit}
@@ -88,6 +99,7 @@ const ContactForm = () => {
         </button>
       </div>
     </form>
+    </div>
     </div>
   );
 };

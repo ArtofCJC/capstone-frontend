@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 
 navbar {
    margin-bottom: auto;
@@ -13,6 +13,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.bg-dark{
+   --bs-bg-opacity: 0;
 }
 
 h2 {
@@ -84,10 +87,10 @@ body {
 }
 
 
-.title-section, .content-section, .sidebar-section {
+.title-section {
   background: #4b4b4b;
    border-radius: 12px;
-   border: solid 3px #858585; 
+   border: ridge 3px #bcbcbc; 
 }
 
 .title-section {
@@ -110,7 +113,7 @@ body {
   text-align: center;
   
   h3 {
-    background: gold;
+    
     max-width: 100%;
     margin: 0 auto;
     padding: 50px 0 100px; 
@@ -118,7 +121,7 @@ body {
   }
 }
 .adspace{
-   background-color: #28587c;
+   filter: drop-shadow(0px 0px 10px black);
    height: ;
    text-align: center;
    
@@ -140,8 +143,23 @@ body{
    font-family: 'Roboto', sans-serif;
    position:relative;
 }
-.cardbg{
-   background: -webkit-linear-gradient(#eee, #333);
+.btnborder{
+   border: gray;
+   border-radius: 20%;
+   border-style: groove; 
+}
+.cardbg {
+   background: linear-gradient(to right, rgba(184, 184, 184, 0.904), rgba(0, 0, 0, 0.729));
+ }
+ 
+.cborder{
+   border: gray;
+   border-radius: 2%;
+   border-style: ridge;
+}
+.cardbord{
+   border-style: inset;
+   border-style: groove;
 }
 nav{
    width:100%;
@@ -156,9 +174,12 @@ nav{
    color: #000;
    /* background-image: url(./pages/images/cmap.jpg); */
   padding: 10px;
-  font-family: 'IM Fell English', serif !important;   /* font-family: 'Lobster Two', cursive;
+  font-family: 'Poiret One', serif !important;   /* font-family: 'Lobster Two', cursive;
    font-family: 'UnifrakturMaguntia', cursive; */
    margin-left: auto;
+}
+.decotxt{
+   font-family: 'Poiret One', serif !important;
 }
 
 .navCollapse{
@@ -543,4 +564,41 @@ h1{
  
  .card-header h4 {
    margin: 0; /* Remove margin from the header */
+ }
+ /* About.css */
+
+.about-container {
+   max-width: 100%; /* Set a maximum width for the entire page */
+   display: flex;
+   flex-direction: column;
+   align-items: center; /* Center the content horizontally */
+ }
+ 
+ .grid-container2 {
+   display: grid;
+   grid-template-columns: 1fr 300px; /* Two columns: content and advertisement */
+   grid-gap: 20px; /* Adjust the gap between columns */
+   margin-top: 20px; /* Add some margin to separate content from the advertisement */
+ }
+ 
+ .grid-item.content {
+   /* Add styling for your content column if needed */
+   
+ }
+ 
+ .grid-item.advertisement {
+   padding-right: 50px;
+   /* Add styling for your advertisement column */
+ }
+ 
+ /* Additional styling for the advertisement content */
+ .advertisement-content {
+   
+   background-color: #f0f0f0; /* Background color for the advertisement */
+   padding: 20px; /* Add padding for spacing and readability */
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to the advertisement */
+   
+ }
+ .imgbrdrnd{
+border-radius: 2%;
  }

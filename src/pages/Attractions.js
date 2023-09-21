@@ -6,6 +6,7 @@ import Col from 'react-bootstrap/Col';
 import AttractionDetails from '../components/AttractionDetails';
 import bad from './images/batman-ad.jpg'
 import bad2 from './images/bad2.png'
+import csky from './images/cincyskylineclip.png'
 import '../index.css'
 
 const Attractions = () => {
@@ -35,8 +36,10 @@ useEffect(() => {
     <div>
     <div class="row">
             <div class="col">
-                <div class="title-section">
-                    <h1 className='header-logo' style={{ color: "white"}}>The Cincinnati Travel Charter</h1>
+                <div class="title-section dropShad cardbg container container-fluid">
+            <img src={csky} alt='skyline' className='cotainer container-fluid imgbrdrnd'/>
+                    <h1 className='header-logo' style={{ color: "white"}}>Cincinnati Attractions</h1>
+                    
                 </div>
             </div>
         </div>

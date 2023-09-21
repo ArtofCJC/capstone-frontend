@@ -7,6 +7,7 @@ import oTR from './images/otr.jpg'
 import pBS from './images/pbs.jpg'
 import cMH from './images/cmh.jpg'
 import cTerm from './images/cterm.jpg'
+import csky from './images/cincyskylineclip.png'
 
 const Home = () => {
   return (
@@ -17,10 +18,12 @@ const Home = () => {
 
     <article>
     <div class="container-fluid">
-        <div class="row">
+    <div class="row">
             <div class="col">
-                <div class="title-section">
-                    <h1 className='header-logo' style={{ color: "white"}}>The Cincinnati Travel Charter</h1>
+                <div class="title-section dropShad cardbg container container-fluid">
+            <img src={csky} alt='skyline' className='cotainer container-fluid imgbrdrnd'/>
+                    <h1 className='header-logo' style={{ color: "white"}}>Welcome to Cincinnati</h1>
+                    
                 </div>
             </div>
         </div>
@@ -31,23 +34,23 @@ const Home = () => {
                   
                     <div>
 
-                    <Carousel>
-      <Carousel.Item >
-      <img src={cTerm} className='cimg'/>
+                    <Carousel className='dropShad'>
+      <Carousel.Item>
+      <img src={cTerm} className='cimg content-section'/>
         <Carousel.Caption>
           <h3>Union Station</h3>
           <p>A former train terminal turned museum. Known as the inspiration behind the Justice League HQ</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item >
-      <img src={pBS} className='cimg'/>
+      <img src={pBS} className='cimg content-section'/>
         <Carousel.Caption>
           <h3>Paul Brown Stadium</h3>
           <p>Named after Paul Brown. The former coach and co-founder of the Cleveland Browns, and the original coach of the Cincinnati Bengals</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-         <img src={cMH} className='cimg'/>
+         <img src={cMH} className='cimg content-section'/>
         <Carousel.Caption>
           <h3>Cincinnati Music Hall</h3>
           <p>
@@ -56,11 +59,13 @@ const Home = () => {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
-      
+      <div><h1 className='header-logo text-light'>This is Cincinnati</h1><p className='header-logo text-light'>Welcome to Cincinnati, Ohio, a vibrant and culturally rich city nestled along the banks of the mighty Ohio River. Known for its diverse array of attractions, Cincinnati offers a captivating blend of history, sports, arts, and entertainment that will surely leave travelers enthralled. As you embark on your journey through this bustling metropolis, be prepared to explore iconic landmarks such as the Union Station, a majestic testament to the city's transportation history, and Paul Brown Stadium, home to the Cincinnati Bengals, where you can catch an exciting NFL game. Just a stone's throw away is the Great American Ballpark, where you can cheer on the Cincinnati Reds and soak in the timeless tradition of America's favorite pastime.
+
+For those with a love for wildlife and the great outdoors, the Cincinnati Zoo is a must-visit destination. This world-renowned zoo is home to a diverse collection of animals and offers a delightful experience for animal enthusiasts of all ages. To immerse yourself in the city's vibrant cultural scene, make sure to visit the Cincinnati Music Hall, an architectural masterpiece that hosts a variety of performances, from classical concerts to Broadway shows. These are just a few of the many attractions that Cincinnati has to offer, promising an unforgettable travel experience filled with history, sports, and the arts.</p></div>
     </div>
                 </div>
             </div>
-            <div class="col-5 bg-warning adspace">
+            <div class="col-5 adspace">
 
               <div class="sidebar-item">
                 <div class="make-me-sticky adspace">
